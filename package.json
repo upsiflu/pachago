@@ -1,0 +1,24 @@
+{
+  "name": "elm-pages-app",
+  "type": "module",
+  "scripts": {
+    "postinstall": "npx elm-tooling install",
+    "start": "npx elm-pages dev",
+    "build": "npx elm-pages build",
+    "generate:tailwind": "elm-tailwind-modules --dir ./gen --tailwind-config tailwind.config.js",
+    "generate:graphql": "elm-graphql https://smoothie-shop.hasura.app/v1/graphql --header \"x-hasura-admin-secret: $SMOOTHIES_HASURA_SECRET\" --output gen"
+  },
+  "devDependencies": {
+    "@dillonkearns/elm-graphql": "^4.3.1",
+    "elm-codegen": "^0.5.1",
+    "elm-optimize-level-2": "^0.3.5",
+    "elm-pages": "^3.0.10",
+    "elm-review": "^2.10.3",
+    "elm-tooling": "^1.15.0",
+    "lamdera": "^0.19.1-1.2.1-1",
+    "vite": "^5.0.11"
+  },
+  "dependencies": {
+    "@netlify/functions": "^1.4.0"
+  }
+}
