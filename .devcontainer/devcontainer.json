@@ -7,12 +7,24 @@
 		"node": {
 			"version": "lts",
 			"nodeGypDependencies": true
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"mhutchie.git-graph",
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"elm-land.elm-land"
+			]
 		},
-		"extensions": [
-		  "mhutchie.git-graph",
-		  "dbaeumer.vscode-eslint",
-		  "esbenp.prettier-vscode",
-		  "elm-land.elm-land"
-		]
+		"codespaces": {
+			"extensions": [
+				"mhutchie.git-graph",
+				"dbaeumer.vscode-eslint",
+				"esbenp.prettier-vscode",
+				"elm-land.elm-land"
+			]
+		}
 	}
 }
