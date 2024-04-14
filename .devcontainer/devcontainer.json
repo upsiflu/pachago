@@ -3,6 +3,16 @@
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/elm-asdf:2": {},
 		"ghcr.io/devcontainers-contrib/features/pnpm:2": {},
-		"ghcr.io/devcontainers-community/npm-features/typescript:1": {}
+		"ghcr.io/devcontainers-community/npm-features/typescript:1": {},
+		"node": {
+			"version": "lts",
+			"nodeGypDependencies": true
+		},
+		"extensions": [
+		  "mhutchie.git-graph",
+		  "dbaeumer.vscode-eslint",
+		  "esbenp.prettier-vscode",
+		  "elm-land.elm-land"
+		]
 	}
 }
